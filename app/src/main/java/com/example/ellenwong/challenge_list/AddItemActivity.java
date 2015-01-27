@@ -3,6 +3,7 @@ package com.example.ellenwong.challenge_list;
 /**
  * Created by ellenwong on 1/26/15.
  */
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -63,23 +64,23 @@ public class AddItemActivity extends ActionBarActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             final View rootView = inflater.inflate(R.layout.fragment_add_item, container, false);
-            //editText_challengeName, editText_challengeName
 
             Button challengeButton = (Button)rootView.findViewById(R.id.button_challenge);
 
             challengeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    createNewItem(rootView);
+                    createNewChallenge(rootView);
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
                 }
             });
-
-            // TODO: How to minimize the Add item View to get back to the list view
 
             return rootView;
         }
 
-        private static void createNewItem(View rootView) {
+        private static void createNewChallenge(View rootView) {
 
             EditText name_input = (EditText)rootView.findViewById(R.id.editText_challengeName);
             String name = name_input.getText().toString();

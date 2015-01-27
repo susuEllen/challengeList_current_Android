@@ -6,10 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.parse.Parse;
-import com.parse.ParseException;
 import com.parse.ParseObject;
-import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -22,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        registerParseObjects();
+        this.registerParseObjects();
         Parse.initialize(this, APP_ID_PARSE, CLIENT_ID_PARSE);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -55,47 +52,45 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void testCreateParseUser() {
-        // try out creating user with standard code
-        //testCreateParseUser();
-
-        ParseUser user = new ParseUser();
-        user.setUsername("my name Ellen");
-        user.setPassword("my pass Ellen");
-        user.setEmail("email@example.com");
-
-// other fields can be set just like with ParseObject
-        user.put("phone", "650-555-0000");
-
-        user.signUpInBackground(new SignUpCallback() {
-            @Override
-            public void done(ParseException e) {
-                if (e == null) {
-
-                } else {
-
-                }
-            }
-        });
-
-
-    }
-    private void testCreateParseObject() {
-        ParseObject testObject = new ParseObject("TestObjectEllen");
-        testObject.put("What", "is");
-        testObject.saveInBackground();
-    }
-
-    private void testCreatingTestChallengeListObject() {
-        ChallengeListItem item = new ChallengeListItem();
-        item.setName("Yoga");
-        item.setDescription("Do Yoga for 30 Days");
-        item.setGoal(30);
-        item.setStart(0);
-        item.setImageURL("http://www.lanzarotesurf.com/wp-content/uploads/2014/11/yoga-pose.jpg");
-        item.setMetric("day");
-        item.saveInBackground();
-    }
+//    private void testCreateParseUser() {
+//        // try out creating user with standard code
+//        //testCreateParseUser();
+//
+//        ParseUser user = new ParseUser();
+//        user.setUsername("my name Ellen");
+//        user.setPassword("my pass Ellen");
+//        user.setEmail("email@example.com");
+//
+//// other fields can be set just like with ParseObject
+//        user.put("phone", "650-555-0000");
+//
+//        user.signUpInBackground(new SignUpCallback() {
+//            @Override
+//            public void done(ParseException e) {
+//                if (e == null) {
+//
+//                } else {
+//
+//                }
+//            }
+//        });
+//    }
+//    private void testCreateParseObject() {
+//        ParseObject testObject = new ParseObject("TestObjectEllen");
+//        testObject.put("What", "is");
+//        testObject.saveInBackground();
+//    }
+//
+//    private void testCreatingTestChallengeListObject() {
+//        ChallengeListItem item = new ChallengeListItem();
+//        item.setName("Yoga");
+//        item.setDescription("Do Yoga for 30 Days");
+//        item.setGoal(30);
+//        item.setStart(0);
+//        item.setImageURL("http://www.lanzarotesurf.com/wp-content/uploads/2014/11/yoga-pose.jpg");
+//        item.setMetric("day");
+//        item.saveInBackground();
+//    }
 
     private void registerParseObjects() {
         ParseObject.registerSubclass(ChallengeListItem.class);
