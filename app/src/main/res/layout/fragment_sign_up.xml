@@ -1,0 +1,167 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ellenwong.challenge_list.SignUpFragment">
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<TextView android:layout_width="match_parent" android:layout_height="match_parent"-->
+        <!--android:text="@string/hello_blank_fragment" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/material_deep_teal_200"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+
+            android:text="@string/com_facebook_loginview_log_in_button"
+            android:textColor="@color/com_facebook_loginview_text_color"
+            android:textSize="@dimen/com_facebook_loginview_text_size"
+            android:textStyle="bold"
+
+            android:background="@drawable/com_facebook_button_blue"
+            android:drawableLeft="@drawable/com_facebook_inverse_icon"
+            android:drawablePadding="@dimen/com_facebook_likebutton_compound_drawable_padding"
+            android:paddingLeft="@dimen/com_facebook_loginview_padding_left"
+            android:paddingTop="@dimen/com_facebook_loginview_padding_top"
+            android:paddingRight="@dimen/com_facebook_loginview_padding_right"
+            android:paddingBottom="@dimen/com_facebook_loginview_padding_bottom"
+            android:id="@+id/button_facebook_login"/>
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="OR"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Username"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/textViewUsername"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:autoText="false"-->
+            <!--android:text="Your username"-->
+            <!--android:id="@+id/editText_Username"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@android:color/white"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Email"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/textViewEmail"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:ems="10"-->
+            <!--android:autoText="false"-->
+            <!--android:text="Your email"-->
+            <!--android:id="@+id/editTextEmail"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@android:color/white"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="First Name"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/textViewFirstName"-->
+            <!--android:visibility="gone"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editText_FirstName"-->
+            <!--android:text="Your First Name"-->
+            <!--android:background="@android:color/white"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Last Name"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/textViewLastName"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editText_LastName"-->
+            <!--android:visibility="gone"-->
+            <!--android:background="@android:color/white"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Password"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/textViewPassword"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:ems="10"-->
+            <!--android:autoText="false"-->
+            <!--android:id="@+id/editText_Password"-->
+            <!--android:background="@android:color/white"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="right">-->
+
+            <!--<Button-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Parse User Log In"-->
+                <!--android:id="@+id/button_logIn"/>-->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--<com.facebook.widget.LoginButton-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/button_facebook_login" />-->
+
+
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:visibility="gone"-->
+                <!--android:text="New User? Sign up here."/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Sign Up"-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/button_SignUp"/>-->
+
+            <!--</LinearLayout>-->
+
+    </LinearLayout>
+</FrameLayout>

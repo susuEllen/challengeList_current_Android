@@ -31,7 +31,6 @@ public class ServerConnectionHelper {
             // Construct the URL for the OpenWeatherMap query
             // Possible parameters are available at OWM's forecast API page, at
             // http://openweathermap.org/API#forecast
-            //URL url = new URL("http://api.openweathermap.org/data/2.5/forecast/daily?q=94043&mode=json&units=metric&cnt=7");
 
             URL url = new URL("http://172.16.1.39/~ellenwong/ep.php");  // where 10.0.0.14 is my ipaddress
             // Create the request to OpenWeatherMap, and open the connection
